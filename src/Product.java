@@ -3,7 +3,6 @@ import java.util.jar.JarEntry;
 
 public class Product {
 
-
     private final String name;
     private final float price;
     private final int weight;

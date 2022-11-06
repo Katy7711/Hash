@@ -21,7 +21,6 @@ public class Recipe {
         return sum;
     }
 
-
     public String getName() {
         return name;
     }
