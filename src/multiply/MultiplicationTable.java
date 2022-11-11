@@ -7,9 +7,6 @@ import java.util.Set;
 public class MultiplicationTable {
     private final Set<Task> tasks = new HashSet<>();
 
-
-
-
     public MultiplicationTable() {
         Random random = new Random();
         while (tasks.size()<15) {
