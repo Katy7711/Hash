@@ -13,17 +13,10 @@ public class Main {
         Product product = new Product("морковь", 45.0f, 1);
         Product product1 = new Product("картошка", 60f, 5);
         ProductList productList = new ProductList();
-        productList.addProductList(product);
-        productList.addProductList(product1);
+        productList.putProductList(product,4);
+        productList.putProductList(product1,6);
         System.out.println(productList);
-//        Product product3 = new Product("картошка", 40f, 6);
-//        productList.addProductList(product3);
-        MultiplicationTable multiplicationTable = new MultiplicationTable();
-        System.out.println(multiplicationTable);
-//        Passport passport = new Passport(345432, "Иванов", "Иван", "Иванович", );  как здесь вводить дату?
 
-//        Recipe recipe = new Recipe("салат", "");
-// Почему у меня тут горит красным при добавлении продуктов?
 
 
     }
@@ -42,7 +35,7 @@ public class Main {
             }
             System.out.println(numbers);
         }
-// почему не выводится в консль этот метод?
+
 
 
 

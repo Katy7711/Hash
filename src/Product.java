@@ -1,12 +1,14 @@
+import java.util.Map;
 import java.util.Objects;
 import java.util.jar.JarEntry;
 
-public class Product {
+public class Product implements Map.Entry<Product, Integer> {
 
     private final String name;
     private final float price;
     private final int weight;
     private boolean check;
+
 
     public Product(String name, float price, int weight) {
         this.check = false;
@@ -36,6 +38,21 @@ public class Product {
 
     public void setCheck() {
         this.check = true;
+    }
+
+    @Override
+    public Product getKey() {
+        return null;
+    }
+
+    @Override
+    public Integer getValue() {
+        return null;
+    }
+
+    @Override
+    public Integer setValue(Integer value) {
+        return null;
     }
 
     @Override

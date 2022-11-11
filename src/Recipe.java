@@ -1,3 +1,4 @@
+import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
@@ -15,8 +16,8 @@ public class Recipe {
 
     public float getRecipeProduct () {
         float sum = 0;
-        for (Product product: products) {
-            sum += product.getPrice();
+        for (Product product : products) {
+            sum = (sum + product.getPrice()) * product.getValue();
         }
         return sum;
     }
